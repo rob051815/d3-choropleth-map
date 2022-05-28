@@ -1,0 +1,58 @@
+:root {
+    --bg-main: #4e598c;
+    --bg-sec: ghostwhite;
+    --bg-3: #2D3450;
+    --ind-1: #E5F5E0;
+    --ind-2: #C7E9C0;
+    --ind-3: #A1D99B;
+    --ind-4: #74C476;
+    --ind-5: #41AB5D;
+    --ind-6: #238B45;
+    --ind-7: #006D2C;
+    --text-1: #f4f5f5;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-main);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--text-1);
+}
+
+#title {
+    margin-bottom: 0;
+}
+
+#canvas {
+    min-width: 1000px;
+    min-height: 600px;
+}
+
+#legend text {
+    font-size: 12px;
+    fill: var(--text-1);
+}
+
+#tooltip {
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    position: absolute;
+    padding: 5px;
+    font-size: 10px;
+    font-family: verdana, sans-serif;
+    color: var(--text-1);
+    background-color: var(--bg-3);
+    box-shadow: 0px 0px 3px 1px var(--bg-sec);
+}

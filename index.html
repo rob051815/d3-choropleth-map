@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Cloropleth Map</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha512-4UKI/XKm3xrvJ6pZS5oTRvIQGIzZFoXR71rRBb1y2N+PbwAsKa5tPl2J6WvbEvwN3TxQCm8hMzsl/pO+82iRlg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">USA Educational Attainment</h1>
+        <div id="tooltip"></div>
+        <svg id="canvas"></svg>
+        <h3 id="description"> Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)
+        </h3>
+        <svg id="legend">
+            <g>
+                <rect x="0" y="0" width="40" height="40" fill="var(--ind-1)"></rect>
+                <text x="0" y="60" ">3%</text>
+              </g>
+              <g>
+                <rect x="40" y="0" width="40" height="40" fill="var(--ind-2)"></rect>
+                <text x="40" y="60" ">12%</text>
+              </g>
+              <g>
+                <rect x="80" y="0" width="40" height="40" fill="var(--ind-3)"></rect>
+                <text x="80" y="60" ">21%</text>
+              </g>
+              <g>
+                <rect x="120" y="0" width="40" height="40" fill="var(--ind-4)"></rect>
+                <text x="120" y="60">30%</text>
+              </g>
+              <g>
+                <rect x="160" y="0" width="40" height="40" fill="var(--ind-5)"></rect>
+                <text x="160" y="60">39%</text>
+              </g>
+              <g>
+                <rect x="200" y="0" width="40" height="40" fill="var(--ind-6)"></rect>
+                <text x="200" y="60">48%</text>
+              </g>
+              <g>
+                <rect x="240" y="0" width="40" height="40" fill="var(--ind-7)"></rect>
+                <text x="240" y="60">57%</text>
+                <text x="276" y="60">66%</text>
+              </g>
+        </svg>
+    </div>
+</body>
+<script defer src="./script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
