@@ -1,4 +1,4 @@
-## D3 Cloropleth Map
+## D3 Choropleth Map
 
 ---
 
